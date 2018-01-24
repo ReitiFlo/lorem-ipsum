@@ -1,0 +1,55 @@
+%% GIT WORKSHOP %%
+%% DATE: 24.01.2018
+%% Folien: https://synpro.solutions/git-workshop-ieee-2018
+
+// Workflow: Neues Project 
+1. Readme.md anlegen
+2. git init
+3. git status (Überprüfung, initial commit)
+4. sublime (some data), save
+5. sublime (edit data)
+6. git commit -v Readme.md
+7. git diff --word-diff (show changed word)
+8. git blame (Überprüfung ob Änderung)
+
+
+// !!!! git config --global core.editor 'open -a "/Applications/Sublime Text 2.app" -W'
+
+// Remote Repos (github.com), Git-Verzeichnis in Git-Verzeichnis --> don't do that
+1. Fork (copy http://example.git from project)
+2. Clone clone http://example.git
+3. sublime (edit some data)
+3. git commit -v READme.md (commit local geändert)
+4. git push (sync. github, ReitiFlo)
+5. (github.com: pull request -> org. repository: owner of inital repo)
+
+// add: issue#18 (Error handling open)
+// pull request (#18 fixed)
+// owner: except bug fix
+
+// git pull, nur wenn man keine Schreibrechte hat! 
+
+// add coloborators
+// cmd: git pull, wird das act. repo wieder heruntergeladen ins local repo
+// cmd: git log, man sieht alle Änderungen (mit Userinfo)
+
+// workflow: changes
+// sublime README.md (some changes)
+// git add README.md (Änderung hinzufügen)
+// git commit -v (local repo updated)
+// git push (cpy local repo --> remote repo)
+
+// error handling (2 different commits occured: error message: ..rejected....)
+// ---> first pull, before add new commit!
+// ---> ...
+
+// Some helpfull infos
+// Settings: Danger Zone: Delete this repo (github.com)
+// git show HEAD --> letzer commit wird angezeigt (cmd:bash)
+// git checkout %commit hash% --> ex. bac683a053b9401420f36b6446389278faa4a57f, master (cmd:bash)
+// git revert --> reset to commitment point
+
+// review: advanced topics
+// --> braches (Verzweigen, Zusammenführen )
+// --> tag (ex. add version number)
+// 
